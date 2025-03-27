@@ -21,11 +21,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build the site
-        run: |
-          mkdir -p public
-          cp index.html public
-
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
